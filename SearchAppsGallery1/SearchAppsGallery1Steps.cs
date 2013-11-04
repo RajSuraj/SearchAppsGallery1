@@ -61,7 +61,7 @@ namespace SearchAppsGallery1
             var expected = new System.Web.Script.Serialization.JavaScriptSerializer().Deserialize<Dictionary<string, dynamic>>(_theapiresponse);
             int runcount = expected["runCount"];
             Console.Write("No of times the app has run" + runcount);
-            Assert.IsTrue(runcount > 1);
+            Assert.IsTrue(runcount > appruncount);
 
         }
         
